@@ -46,6 +46,7 @@ public class IonRangeSliderTest extends BaseTestClass
     {
         Page p = getInstance();
         IonRangeSlider irs = new IonRangeSlider();
+        irs.setSkin(IonRangeSliderTheme.Flat);
         p.getOptions().setDynamicRender(false);
         p.getBody().add(irs);
         System.out.println(p.toString(true));

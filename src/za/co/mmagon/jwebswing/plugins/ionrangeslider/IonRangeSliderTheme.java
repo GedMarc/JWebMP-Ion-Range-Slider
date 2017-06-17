@@ -33,9 +33,14 @@ public enum IonRangeSliderTheme
      */
     private IonRangeSliderTheme(CSSReference data)
     {
-
+        this.data = data;
     }
 
+    /**
+     * Returns the reference for the data
+     *
+     * @return
+     */
     public CSSReference getData()
     {
         return data;
