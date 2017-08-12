@@ -13,44 +13,44 @@ package za.co.mmagon.jwebswing.plugins.ionrangeslider;
  */
 public enum IonRangeSliderTypes
 {
-    Double,
-    Integer;
-    /**
-     * Any sub data
-     */
-    private String data;
+	Double,
+	Integer;
+	/**
+	 * Any sub data
+	 */
+	private String data;
 
-    /**
-     * A new IonRangeSliderTypes
-     */
-    private IonRangeSliderTypes()
-    {
+	/**
+	 * A new IonRangeSliderTypes
+	 */
+	private IonRangeSliderTypes()
+	{
 
-    }
+	}
 
-    /**
-     * A new IonRangeSliderTypes with data
-     */
-    private IonRangeSliderTypes(String data)
-    {
+	/**
+	 * A new IonRangeSliderTypes with data
+	 */
+	private IonRangeSliderTypes(String data)
+	{
 
-    }
+	}
 
-    /**
-     * Returns the name or the data contained within
-     *
-     * @return
-     */
-    @Override
-    public String toString()
-    {
-        if (data != null && !data.isEmpty())
-        {
-            return data;
-        }
-        else
-        {
-            return name();
-        }
-    }
+	/**
+	 * Returns the name or the data contained within
+	 *
+	 * @return
+	 */
+	@Override
+	public String toString()
+	{
+		if (data != null && !data.isEmpty())
+		{
+			return data;
+		}
+		else
+		{
+			return name();
+		}
+	}
 }

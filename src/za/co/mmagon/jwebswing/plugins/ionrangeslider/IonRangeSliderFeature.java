@@ -12,35 +12,35 @@ import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
 public class IonRangeSliderFeature extends Feature<IonRangeSliderOptions, IonRangeSliderFeature>
 {
 
-    private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L;
 
-    /*
-     * Constructs a new IonRangeSliderFeature
-     */
-    public IonRangeSliderFeature(ComponentHierarchyBase component)
-    {
-        super("IonRangeSliderFeature", component);
-    }
+	/*
+	 * Constructs a new IonRangeSliderFeature
+	 */
+	public IonRangeSliderFeature(ComponentHierarchyBase component)
+	{
+		super("IonRangeSliderFeature", component);
+	}
 
-    @Override
-    protected void assignFunctionsToComponent()
-    {
-        addQuery(getComponent().getJQueryID() + "ionRangeSlider(" + getOptions() + ");" + getNewLine());
-    }
+	@Override
+	protected void assignFunctionsToComponent()
+	{
+		addQuery(getComponent().getJQueryID() + "ionRangeSlider(" + getOptions() + ");" + getNewLine());
+	}
 
-    /**
-     * Returns the options
-     *
-     * @return
-     */
-    @Override
-    public IonRangeSliderOptions getOptions()
-    {
-        if (super.getOptions() == null)
-        {
-            setOptions(new IonRangeSliderOptions());
-        }
-        return super.getOptions();
-    }
+	/**
+	 * Returns the options
+	 *
+	 * @return
+	 */
+	@Override
+	public IonRangeSliderOptions getOptions()
+	{
+		if (super.getOptions() == null)
+		{
+			setOptions(new IonRangeSliderOptions());
+		}
+		return super.getOptions();
+	}
 
 }
