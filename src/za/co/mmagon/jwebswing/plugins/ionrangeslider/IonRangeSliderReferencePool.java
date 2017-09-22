@@ -31,19 +31,20 @@ enum IonRangeSliderReferencePool implements ReferencePool
 	/**
 	 * A new AngularSlimScrollReferencePool
 	 */
-	private IonRangeSliderReferencePool()
+	IonRangeSliderReferencePool()
 	{
 
 	}
+
 	/**
 	 * A new AngularSlimScrollReferencePool with data
 	 */
-	private IonRangeSliderReferencePool(String data)
+	IonRangeSliderReferencePool(String data)
 	{
 
 	}
-
-	private IonRangeSliderReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
+	
+	IonRangeSliderReferencePool(JavascriptReference javaScriptReference, CSSReference cssReference)
 	{
 		this.javaScriptReference = javaScriptReference;
 		if (this.javaScriptReference != null)
