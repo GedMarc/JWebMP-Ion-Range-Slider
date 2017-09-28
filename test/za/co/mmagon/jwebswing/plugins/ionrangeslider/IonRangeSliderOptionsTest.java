@@ -1,6 +1,6 @@
 package za.co.mmagon.jwebswing.plugins.ionrangeslider;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * @author Marc Magon
