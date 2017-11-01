@@ -29,14 +29,6 @@ public enum IonRangeSliderTypes
 	}
 
 	/**
-	 * A new IonRangeSliderTypes with data
-	 */
-	private IonRangeSliderTypes(String data)
-	{
-
-	}
-
-	/**
 	 * Returns the name or the data contained within
 	 *
 	 * @return

@@ -96,4 +96,37 @@ public class IonRangeSlider extends Input<InputAttributes, IonRangeSlider>
 		return this;
 	}
 
+	@Override
+	public boolean equals(Object o)
+	{
+		if (this == o)
+		{
+			return true;
+		}
+		if (o == null || getClass() != o.getClass())
+		{
+			return false;
+		}
+		if (!super.equals(o))
+		{
+			return false;
+		}
+
+		IonRangeSlider that = (IonRangeSlider) o;
+
+		if (!getFeature().equals(that.getFeature()))
+		{
+			return false;
+		}
+		return getSkin() == that.getSkin();
+	}
+
+	@Override
+	public int hashCode()
+	{
+		int result = super.hashCode();
+		result = 31 * result + getFeature().hashCode();
+		result = 31 * result + getSkin().hashCode();
+		return result;
+	}
 }
