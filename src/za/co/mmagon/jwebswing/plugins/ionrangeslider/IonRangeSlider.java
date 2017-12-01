@@ -124,9 +124,6 @@ public class IonRangeSlider extends Input<InputAttributes, IonRangeSlider>
 	@Override
 	public int hashCode()
 	{
-		int result = super.hashCode();
-		result = 31 * result + getFeature().hashCode();
-		result = 31 * result + getSkin().hashCode();
-		return result;
+		return super.hashCode();
 	}
 }
