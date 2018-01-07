@@ -3,6 +3,8 @@ package za.co.mmagon.jwebswing.plugins.ionrangeslider;
 import za.co.mmagon.jwebswing.Feature;
 import za.co.mmagon.jwebswing.base.ComponentHierarchyBase;
 
+import static za.co.mmagon.jwebswing.utilities.StaticStrings.STRING_CLOSING_BRACKET_SEMICOLON;
+
 /**
  * Creates toast messages
  *
@@ -25,7 +27,7 @@ public class IonRangeSliderFeature extends Feature<IonRangeSliderOptions, IonRan
 	@Override
 	protected void assignFunctionsToComponent()
 	{
-		addQuery(getComponent().getJQueryID() + "ionRangeSlider(" + getOptions() + ");" + getNewLine());
+		addQuery(getComponent().getJQueryID() + "ionRangeSlider(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON + getNewLine());
 	}
 
 	/**
