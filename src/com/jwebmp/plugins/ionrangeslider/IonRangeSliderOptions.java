@@ -1,8 +1,8 @@
-package za.co.mmagon.jwebswing.plugins.ionrangeslider;
+package com.jwebmp.plugins.ionrangeslider;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavaScriptPart;
-import za.co.mmagon.jwebswing.htmlbuilder.javascript.JavascriptFunction;
+import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.htmlbuilder.javascript.JavascriptFunction;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.List;
  */
 public class IonRangeSliderOptions extends JavaScriptPart
 {
-	
+
 	private static final long serialVersionUID = 1L;
 	/**
 	 * How long, in milliseconds, to wait to trigger the ionChange event after each change in the range value. Default 0.
@@ -87,7 +87,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	 * A given postfix for a number
 	 */
 	private Character postfix;
-	
+
 	/**
 	 * A given postfix for the displayed maximum number
 	 */
@@ -189,7 +189,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	 */
 	@JsonProperty("drag_interval")
 	private Boolean dragInterval;
-	
+
 	/**
 	 * Constructs a new instance of the image range slider
 	 */
@@ -197,7 +197,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		//Nothing needed
 	}
-	
+
 	/**
 	 * How long, in milliseconds, to wait to trigger the ionChange event after each change in the range value. Default 0.
 	 *
@@ -207,7 +207,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return debounce;
 	}
-	
+
 	/**
 	 * How long, in milliseconds, to wait to trigger the ionChange event after each change in the range value. Default 0.
 	 *
@@ -220,7 +220,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.debounce = debounce;
 		return this;
 	}
-	
+
 	/**
 	 * Show two knobs. Defaults to false.
 	 *
@@ -230,7 +230,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return dualKnobs;
 	}
-	
+
 	/**
 	 * Show two knobs. Defaults to false.
 	 *
@@ -243,7 +243,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.dualKnobs = dualKnobs;
 		return this;
 	}
-	
+
 	/**
 	 * Maximum integer value of the range. Defaults to 100.
 	 *
@@ -253,7 +253,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return max;
 	}
-	
+
 	/**
 	 * Maximum integer value of the range. Defaults to 100.
 	 *
@@ -266,7 +266,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.max = max;
 		return this;
 	}
-	
+
 	/**
 	 * Minimum integer value of the range. Defaults to 0.
 	 *
@@ -276,7 +276,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return min;
 	}
-	
+
 	/**
 	 * Minimum integer value of the range. Defaults to 0.
 	 *
@@ -289,7 +289,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.min = min;
 		return this;
 	}
-	
+
 	/**
 	 * If true, a pin with integer value is shown when the knob is pressed. Defaults to false.
 	 *
@@ -299,7 +299,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return pin;
 	}
-	
+
 	/**
 	 * If true, a pin with integer value is shown when the knob is pressed. Defaults to false.
 	 *
@@ -312,7 +312,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.pin = pin;
 		return this;
 	}
-	
+
 	/**
 	 * If true, the knob snaps to tick marks evenly spaced based on the step property value. Defaults to false.
 	 *
@@ -322,7 +322,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return snaps;
 	}
-	
+
 	/**
 	 * If true, the knob snaps to tick marks evenly spaced based on the step property value. Defaults to false.
 	 *
@@ -335,7 +335,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.snaps = snaps;
 		return this;
 	}
-	
+
 	/**
 	 * Specifies the value granularity. Defaults to 1.
 	 *
@@ -345,7 +345,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return step;
 	}
-	
+
 	/**
 	 * Specifies the value granularity. Defaults to 1.
 	 *
@@ -358,7 +358,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.step = step;
 		return this;
 	}
-	
+
 	/**
 	 * The ion Range Slider Types
 	 *
@@ -368,7 +368,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return type;
 	}
-	
+
 	/**
 	 * The ion Range Slider Types
 	 *
@@ -381,7 +381,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.type = type;
 		return this;
 	}
-	
+
 	/**
 	 * The number on the slider to place the range first item
 	 *
@@ -391,7 +391,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return from;
 	}
-	
+
 	/**
 	 * The number on the slider to place the range first item
 	 *
@@ -404,7 +404,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.from = from;
 		return this;
 	}
-	
+
 	/**
 	 * The number on the slider to place the second ranger slider
 	 *
@@ -414,7 +414,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return to;
 	}
-	
+
 	/**
 	 * The number on the slider to place the second ranger slider
 	 *
@@ -427,7 +427,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.to = to;
 		return this;
 	}
-	
+
 	/**
 	 * Whether or not to show a grid
 	 *
@@ -437,7 +437,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return grid;
 	}
-	
+
 	/**
 	 * Whether or not to show a grid
 	 *
@@ -450,7 +450,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.grid = grid;
 		return this;
 	}
-	
+
 	/**
 	 * Any prefix for the number entered
 	 *
@@ -460,7 +460,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return prefix;
 	}
-	
+
 	/**
 	 * Any prefix for the number entered
 	 *
@@ -473,7 +473,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.prefix = prefix;
 		return this;
 	}
-	
+
 	/**
 	 * Use a custom range of numbers for the slider
 	 *
@@ -487,7 +487,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		}
 		return values;
 	}
-	
+
 	/**
 	 * Use a custom range of numbers for the slider
 	 *
@@ -500,7 +500,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.values = values;
 		return this;
 	}
-	
+
 	/**
 	 * Whether numbers should be beautified
 	 *
@@ -510,7 +510,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return prettifyEnabled;
 	}
-	
+
 	/**
 	 * Whether numbers should be beautified
 	 *
@@ -523,7 +523,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.prettifyEnabled = prettifyEnabled;
 		return this;
 	}
-	
+
 	/**
 	 * Sets a specific thousand separater
 	 *
@@ -533,7 +533,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return prettifySeparater;
 	}
-	
+
 	/**
 	 * Sets a specific thousand separater
 	 *
@@ -546,7 +546,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.prettifySeparater = prettifySeparater;
 		return this;
 	}
-	
+
 	/**
 	 * A custom function used to prettify the numbers
 	 *
@@ -556,7 +556,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return prettify;
 	}
-	
+
 	/**
 	 * A custom function used to prettify the numbers
 	 *
@@ -569,7 +569,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.prettify = prettify;
 		return this;
 	}
-	
+
 	/**
 	 * A given postfix for a number
 	 *
@@ -579,7 +579,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return postfix;
 	}
-	
+
 	/**
 	 * A given postfix for a number
 	 *
@@ -592,7 +592,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.postfix = postfix;
 		return this;
 	}
-	
+
 	/**
 	 * A given postfix for the displayed maximum number
 	 *
@@ -602,7 +602,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return maxPostfix;
 	}
-	
+
 	/**
 	 * A given postfix for the displayed maximum number
 	 *
@@ -615,7 +615,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.maxPostfix = maxPostfix;
 		return this;
 	}
-	
+
 	/**
 	 * Show the decoration for both min and max in the value field
 	 *
@@ -625,7 +625,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return decorateBoth;
 	}
-	
+
 	/**
 	 * Show the decoration for both min and max in the value field
 	 *
@@ -638,7 +638,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.decorateBoth = decorateBoth;
 		return this;
 	}
-	
+
 	/**
 	 * Use your own separator symbol with values_separator option. Like →
 	 *
@@ -648,7 +648,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return valueSeparator;
 	}
-	
+
 	/**
 	 * Use your own separator symbol with values_separator option. Like →
 	 *
@@ -661,7 +661,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.valueSeparator = valueSeparator;
 		return this;
 	}
-	
+
 	/**
 	 * Hides the min and max
 	 *
@@ -671,7 +671,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return hideMinMax;
 	}
-	
+
 	/**
 	 * Hides the min and max
 	 *
@@ -684,7 +684,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.hideMinMax = hideMinMax;
 		return this;
 	}
-	
+
 	/**
 	 * Hides the from and the to
 	 *
@@ -694,7 +694,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return hideFromTo;
 	}
-	
+
 	/**
 	 * Hides the from and the to
 	 *
@@ -707,7 +707,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.hideFromTo = hideFromTo;
 		return this;
 	}
-	
+
 	/**
 	 * slider labels are far away outside it's container by default, can fix it with ease if you wish, with force_edges attribute:
 	 *
@@ -717,7 +717,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return forceEdges;
 	}
-	
+
 	/**
 	 * slider labels are far away outside it's container by default, can fix it with ease if you wish, with force_edges attribute:
 	 *
@@ -730,7 +730,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.forceEdges = forceEdges;
 		return this;
 	}
-	
+
 	/**
 	 * Specify number of steps in grid number
 	 *
@@ -740,7 +740,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return gridNumber;
 	}
-	
+
 	/**
 	 * Specify number of steps in grid number
 	 *
@@ -753,7 +753,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.gridNumber = gridNumber;
 		return this;
 	}
-	
+
 	/**
 	 * Have predefined step? You can snap grid to it:
 	 *
@@ -763,7 +763,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return gridSnap;
 	}
-	
+
 	/**
 	 * Have predefined step? You can snap grid to it:
 	 *
@@ -776,7 +776,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.gridSnap = gridSnap;
 		return this;
 	}
-	
+
 	/**
 	 * Sometimes you want to forbid dragging one or both handles. Try to move left handle, you can't.
 	 *
@@ -786,7 +786,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return fromFixed;
 	}
-	
+
 	/**
 	 * Sometimes you want to forbid dragging one or both handles. Try to move left handle, you can't.
 	 *
@@ -799,7 +799,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.fromFixed = fromFixed;
 		return this;
 	}
-	
+
 	/**
 	 * Sometimes you want to forbid dragging one or both handles. Try to move left handle, you can't.
 	 *
@@ -809,7 +809,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return toFixed;
 	}
-	
+
 	/**
 	 * Sometimes you want to forbid dragging one or both handles. Try to move left handle, you can't.
 	 *
@@ -822,7 +822,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.toFixed = toFixed;
 		return this;
 	}
-	
+
 	/**
 	 * Gets the From Minimum
 	 *
@@ -832,7 +832,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return fromMin;
 	}
-	
+
 	/**
 	 * Sets the from minimum
 	 *
@@ -845,7 +845,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.fromMin = fromMin;
 		return this;
 	}
-	
+
 	/**
 	 * Gets the from maximum
 	 *
@@ -855,7 +855,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return fromMax;
 	}
-	
+
 	/**
 	 * Sets the from maximum
 	 *
@@ -868,7 +868,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.fromMax = fromMax;
 		return this;
 	}
-	
+
 	/**
 	 * Gets the to minimum
 	 *
@@ -878,7 +878,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return toMin;
 	}
-	
+
 	/**
 	 * Sets the to minimum
 	 *
@@ -891,7 +891,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.toMin = toMin;
 		return this;
 	}
-	
+
 	/**
 	 * Gets the to maximum
 	 *
@@ -901,7 +901,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return toMax;
 	}
-	
+
 	/**
 	 * Sets the to maximum
 	 *
@@ -914,7 +914,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.toMax = toMax;
 		return this;
 	}
-	
+
 	/**
 	 * If this slider is disabled
 	 *
@@ -924,7 +924,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return disabled;
 	}
-	
+
 	/**
 	 * If the slider is disabled
 	 *
@@ -937,7 +937,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.disabled = disabled;
 		return this;
 	}
-	
+
 	/**
 	 * If the keyboard can be used
 	 *
@@ -947,7 +947,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return keyboard;
 	}
-	
+
 	/**
 	 * If the keyboard can be used
 	 *
@@ -960,7 +960,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.keyboard = keyboard;
 		return this;
 	}
-	
+
 	/**
 	 * The keyboard step to apply
 	 *
@@ -970,7 +970,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return keyboardStep;
 	}
-	
+
 	/**
 	 * Sets the keyboard step to apply
 	 *
@@ -983,7 +983,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.keyboardStep = keyboardStep;
 		return this;
 	}
-	
+
 	/**
 	 * Gets the minimum interval
 	 *
@@ -993,7 +993,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return minInterval;
 	}
-	
+
 	/**
 	 * Sets the minimum interval
 	 *
@@ -1006,7 +1006,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.minInterval = minInterval;
 		return this;
 	}
-	
+
 	/**
 	 * Gets the maximum interval
 	 *
@@ -1016,7 +1016,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return maxInterval;
 	}
-	
+
 	/**
 	 * Sets the maximum interval
 	 *
@@ -1029,7 +1029,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.maxInterval = maxInterval;
 		return this;
 	}
-	
+
 	/**
 	 * Gets the drag interval
 	 *
@@ -1039,7 +1039,7 @@ public class IonRangeSliderOptions extends JavaScriptPart
 	{
 		return dragInterval;
 	}
-	
+
 	/**
 	 * Sets the drag interval
 	 *
@@ -1052,5 +1052,5 @@ public class IonRangeSliderOptions extends JavaScriptPart
 		this.dragInterval = dragInterval;
 		return this;
 	}
-	
+
 }

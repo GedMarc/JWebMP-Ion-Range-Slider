@@ -1,4 +1,4 @@
-package za.co.mmagon.jwebswing.plugins.ionrangeslider;
+package com.jwebmp.plugins.ionrangeslider;
 
 import org.junit.jupiter.api.Test;
 
@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test;
  */
 public class IonRangeSliderOptionsTest
 {
-	
+
 	public IonRangeSliderOptionsTest()
 	{
 	}
-	
+
 	@Test
 	public void testSomeMethod()
 	{
@@ -20,5 +20,5 @@ public class IonRangeSliderOptionsTest
 		bso.setFromMax(5.2);
 		System.out.println(bso);
 	}
-	
+
 }

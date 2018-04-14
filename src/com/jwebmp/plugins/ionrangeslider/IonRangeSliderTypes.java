@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package za.co.mmagon.jwebswing.plugins.ionrangeslider;
+package com.jwebmp.plugins.ionrangeslider;
 
 /**
  * The available types for the iron range slider
@@ -23,7 +23,7 @@ public enum IonRangeSliderTypes
 	/**
 	 * A new IonRangeSliderTypes
 	 */
-	private IonRangeSliderTypes()
+	IonRangeSliderTypes()
 	{
 
 	}
