@@ -1,13 +1,13 @@
 package com.jwebmp.plugins.ionrangeslider;
 
-import com.jwebmp.BaseTestClass;
+import com.jwebmp.Page;
 import org.junit.jupiter.api.Test;
 
 /**
  * @author Marc Magon
  */
 public class IonRangeSliderFeatureTest
-		extends BaseTestClass
+
 {
 
 	public IonRangeSliderFeatureTest()
@@ -17,7 +17,7 @@ public class IonRangeSliderFeatureTest
 	@Test
 	public void testSomeMethod()
 	{
-		IonRangeSliderFeature bsf = new IonRangeSliderFeature(getInstance().getBody());
+		IonRangeSliderFeature bsf = new IonRangeSliderFeature(new Page().getBody());
 		bsf.getOptions()
 		   .setDualKnobs(true);
 		System.out.println(bsf.renderJavascript());

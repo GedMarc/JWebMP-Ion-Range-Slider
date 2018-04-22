@@ -17,7 +17,6 @@
 
 package com.jwebmp.plugins.ionrangeslider;
 
-import com.jwebmp.BaseTestClass;
 import com.jwebmp.Page;
 import org.junit.jupiter.api.Test;
 
@@ -25,7 +24,7 @@ import org.junit.jupiter.api.Test;
  * @author Marc Magon
  */
 public class IonRangeSliderTest
-		extends BaseTestClass
+
 {
 
 	public IonRangeSliderTest()
@@ -64,7 +63,7 @@ public class IonRangeSliderTest
 	@Test
 	public void testHtml()
 	{
-		Page p = getInstance();
+		Page p = new Page();
 		IonRangeSlider irs = new IonRangeSlider();
 		irs.setSkin(IonRangeSliderTheme.Flat);
 		p.getOptions()
