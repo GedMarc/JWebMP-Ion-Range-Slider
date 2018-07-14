@@ -13,7 +13,8 @@ import java.util.List;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-public class IonRangeSliderOptions extends JavaScriptPart
+public class IonRangeSliderOptions
+		extends JavaScriptPart
 {
 
 	private static final long serialVersionUID = 1L;

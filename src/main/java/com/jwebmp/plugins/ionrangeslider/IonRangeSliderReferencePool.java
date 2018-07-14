@@ -28,7 +28,8 @@ import com.jwebmp.base.servlets.interfaces.ReferencePool;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-enum IonRangeSliderReferencePool implements ReferencePool
+enum IonRangeSliderReferencePool
+		implements ReferencePool
 {
 	IonRangeSlider(new JavascriptReference("IonRangeSlider", 2.1, "bower_components/ionrangeslider/js/ion.rangeSlider.js"),
 	               new CSSReference("IonRangeSlider", 2.1, "bower_components/ionrangeslider/css/ion.rangeSlider.css")),
@@ -37,7 +38,8 @@ enum IonRangeSliderReferencePool implements ReferencePool
 	IonRangeSliderModernSkin(null, new CSSReference("IonRangeSliderModernSkin", 2.1, "bower_components/ionrangeslider/css/ion.rangeSlider.skinModern.css")),
 	IonRangeSliderNiceSkin(null, new CSSReference("IonRangeSliderNiceSkin", 2.1, "bower_components/ionrangeslider/css/ion.rangeSlider.skinNice.css")),
 	IonRangeSliderSimpleSkin(null, new CSSReference("IonRangeSliderSimpleSkin", 2.1, "bower_components/ionrangeslider/css/ion.rangeSlider.skinSimple.css")),
-	IonRangeSliderSimpleDarkSkin(null, new CSSReference("IonRangeSliderSimpleDarkSkin", 2.1, "bower_components/ionrangeslider/css/ion.rangeSlider.skinDarkSimple.css")),;
+	IonRangeSliderSimpleDarkSkin(null, new CSSReference("IonRangeSliderSimpleDarkSkin", 2.1, "bower_components/ionrangeslider/css/ion.rangeSlider.skinDarkSimple.css")),
+	;
 	/**
 	 * Any sub data
 	 */
