@@ -1,8 +1,8 @@
 package com.jwebmp.plugins.ionrangeslider;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.jwebmp.htmlbuilder.javascript.JavaScriptPart;
-import com.jwebmp.htmlbuilder.javascript.JavascriptFunction;
+import com.jwebmp.core.htmlbuilder.javascript.JavaScriptPart;
+import com.jwebmp.core.htmlbuilder.javascript.JavascriptFunction;
 
 import java.util.ArrayList;
 import java.util.List;

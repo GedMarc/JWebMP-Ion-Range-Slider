@@ -17,9 +17,9 @@
 
 package com.jwebmp.plugins.ionrangeslider;
 
-import com.jwebmp.base.html.Input;
-import com.jwebmp.base.html.attributes.InputAttributes;
-import com.jwebmp.plugins.ComponentInformation;
+import com.jwebmp.core.base.html.Input;
+import com.jwebmp.core.base.html.attributes.InputAttributes;
+import com.jwebmp.core.plugins.ComponentInformation;
 
 /**
  * Turn checkboxes and radio buttons into toggle switches. Created by Mattia Larentis, maintained by Emanuele Marchi and Peter Stein with the help of the community.

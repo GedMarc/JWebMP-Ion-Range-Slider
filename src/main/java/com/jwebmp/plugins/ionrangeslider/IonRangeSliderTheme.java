@@ -17,7 +17,7 @@
 
 package com.jwebmp.plugins.ionrangeslider;
 
-import com.jwebmp.base.references.CSSReference;
+import com.jwebmp.core.base.references.CSSReference;
 
 /**
  * Applied themes for the slider
