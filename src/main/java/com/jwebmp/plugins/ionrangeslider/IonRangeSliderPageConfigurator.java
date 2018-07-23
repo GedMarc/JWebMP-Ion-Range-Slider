@@ -18,9 +18,9 @@
 package com.jwebmp.plugins.ionrangeslider;
 
 import com.jwebmp.core.Page;
-import com.jwebmp.core.PageConfigurator;
 import com.jwebmp.core.plugins.PluginInformation;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
+import com.jwebmp.core.services.IPageConfigurator;
 
 /**
  * Configures the Bootstrap Page Configurator
@@ -40,12 +40,10 @@ import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "http://ionden.com/a/plugins/ion.rangeSlider/en.html",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/IonRangeSlider.jar/download") class IonRangeSliderPageConfigurator
-		extends PageConfigurator
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/IonRangeSlider.jar/download")
+public class IonRangeSliderPageConfigurator
+		implements IPageConfigurator
 {
-
-	private static final long serialVersionUID = 1L;
-
 	/*
 	 * Constructs a new IonRangeSliderPageConfigurator
 	 */
