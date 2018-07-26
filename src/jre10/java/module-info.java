@@ -12,5 +12,5 @@ module com.jwebmp.plugins.ionrangeslider {
 	requires java.logging;
 
 	provides IPageConfigurator with IonRangeSliderPageConfigurator;
-
+	opens com.jwebmp.plugins.ionrangeslider to com.fasterxml.jackson.databind,com.jwebmp.core;
 }
