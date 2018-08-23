@@ -29,7 +29,7 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
  * @since 09 Jun 2017
  */
 public class IonRangeSliderFeature
-		extends Feature<IonRangeSliderOptions, IonRangeSliderFeature>
+		extends Feature<IonRangeSliderFeature, IonRangeSliderOptions, IonRangeSliderFeature>
 {
 
 	private static final long serialVersionUID = 1L;
