@@ -46,12 +46,42 @@ import javax.validation.constraints.NotNull;
 public class IonRangeSliderPageConfigurator
 		implements IPageConfigurator
 {
+	/**
+	 * If this configurator is enabled
+	 */
+	private static boolean enabled = true;
+
 	/*
 	 * Constructs a new IonRangeSliderPageConfigurator
 	 */
 	public IonRangeSliderPageConfigurator()
 	{
 		//Nothing needed
+	}
+
+	/**
+	 * Method isEnabled returns the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @return the enabled (type boolean) of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static boolean isEnabled()
+	{
+		return IonRangeSliderPageConfigurator.enabled;
+	}
+
+	/**
+	 * Method setEnabled sets the enabled of this AngularAnimatedChangePageConfigurator object.
+	 * <p>
+	 * If this configurator is enabled
+	 *
+	 * @param mustEnable
+	 * 		the enabled of this AngularAnimatedChangePageConfigurator object.
+	 */
+	public static void setEnabled(boolean mustEnable)
+	{
+		IonRangeSliderPageConfigurator.enabled = mustEnable;
 	}
 
 	@NotNull
@@ -67,5 +97,11 @@ public class IonRangeSliderPageConfigurator
 			    .addCssReference(IonRangeSliderReferencePool.IonRangeSlider.getCssReference());
 		}
 		return page;
+	}
+
+	@Override
+	public boolean enabled()
+	{
+		return IonRangeSliderPageConfigurator.enabled;
 	}
 }
