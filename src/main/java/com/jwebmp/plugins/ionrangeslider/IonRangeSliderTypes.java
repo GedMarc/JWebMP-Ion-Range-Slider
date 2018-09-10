@@ -13,8 +13,9 @@ package com.jwebmp.plugins.ionrangeslider;
  */
 public enum IonRangeSliderTypes
 {
+	Single,
 	Double,
-	Integer;
+	;
 	/**
 	 * Any sub data
 	 */
@@ -42,7 +43,7 @@ public enum IonRangeSliderTypes
 		}
 		else
 		{
-			return name();
+			return name().toLowerCase();
 		}
 	}
 }

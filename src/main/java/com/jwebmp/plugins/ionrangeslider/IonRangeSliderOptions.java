@@ -13,10 +13,13 @@ import java.util.List;
  * @author Marc Magon
  * @since 09 Jun 2017
  */
-public class IonRangeSliderOptions
-		extends JavaScriptPart
+public class IonRangeSliderOptions<J extends IonRangeSliderOptions<J>>
+		extends JavaScriptPart<J>
 {
 
+	/**
+	 * Field serialVersionUID
+	 */
 	private static final long serialVersionUID = 1L;
 	/**
 	 * How long, in milliseconds, to wait to trigger the ionChange event after each change in the range value. Default 0.
