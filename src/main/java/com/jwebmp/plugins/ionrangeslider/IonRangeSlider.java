@@ -29,7 +29,7 @@ import com.jwebmp.core.plugins.ComponentInformation;
  */
 @ComponentInformation(name = "Ion Range Slider",
 		description = "Ion.RangeSlider. Is an easy, flexible and responsive range slider with tons of options.",
-		url = "https://github.com/GedMarc/JWebSwing-Ion-Range-Slider")
+		url = "https://github.com/GedMarc/JWebMP-Ion-Range-Slider")
 public class IonRangeSlider
 		extends Input<InputAttributes, IonRangeSlider>
 {

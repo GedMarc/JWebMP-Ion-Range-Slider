@@ -37,14 +37,14 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "selector,numbers,range,sliders, ui,web ui, framework",
 		pluginSubtitle = "Ion.RangeSlider. Is an easy, flexible and responsive range slider with tons of options.",
 		pluginSourceUrl = "https://github.com/IonDen/ion.rangeSlider",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing-Ion-Range-Slider/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing-Ion-Range-Slider",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP-Ion-Range-Slider/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP-Ion-Range-Slider",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "http://ionden.com/a/plugins/ion.rangeSlider/en.html",
 		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/IonRangeSlider.jar/download")
 public class IonRangeSliderPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<IonRangeSliderPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
