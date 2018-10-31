@@ -20,7 +20,7 @@ public class IonRangeSliderOptions<J extends IonRangeSliderOptions<J>>
 	/**
 	 * Field serialVersionUID
 	 */
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * How long, in milliseconds, to wait to trigger the ionChange event after each change in the range value. Default 0.
 	 */

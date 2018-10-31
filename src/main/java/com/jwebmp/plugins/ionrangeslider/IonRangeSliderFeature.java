@@ -32,7 +32,6 @@ public class IonRangeSliderFeature
 		extends Feature<IonRangeSliderFeature, IonRangeSliderOptions, IonRangeSliderFeature>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new IonRangeSliderFeature

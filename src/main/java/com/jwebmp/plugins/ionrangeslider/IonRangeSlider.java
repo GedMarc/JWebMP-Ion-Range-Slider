@@ -34,7 +34,7 @@ public class IonRangeSlider
 		extends Input<InputAttributes, IonRangeSlider>
 {
 
-	private static final long serialVersionUID = 1L;
+
 	/**
 	 * The feature for this select
 	 */
