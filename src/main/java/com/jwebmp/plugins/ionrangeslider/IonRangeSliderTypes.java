@@ -8,7 +8,7 @@ package com.jwebmp.plugins.ionrangeslider;
 /**
  * The available types for the iron range slider
  *
- * @author Marc Magon
+ * @author GedMarc
  * @since 11 Jun 2017
  */
 public enum IonRangeSliderTypes

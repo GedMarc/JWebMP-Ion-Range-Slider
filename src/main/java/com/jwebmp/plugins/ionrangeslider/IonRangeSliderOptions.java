@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * All the options available for Bootstrap Switch
  *
- * @author Marc Magon
+ * @author GedMarc
  * @since 09 Jun 2017
  */
 public class IonRangeSliderOptions<J extends IonRangeSliderOptions<J>>
