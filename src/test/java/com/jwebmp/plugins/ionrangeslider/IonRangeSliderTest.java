@@ -63,7 +63,7 @@ public class IonRangeSliderTest
 	@Test
 	public void testHtml()
 	{
-		Page p = new Page();
+		Page<?> p = new Page();
 		IonRangeSlider irs = new IonRangeSlider();
 		irs.setSkin(IonRangeSliderTheme.Flat);
 		p.getOptions()
