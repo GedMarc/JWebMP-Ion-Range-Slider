@@ -1,14 +1,12 @@
 ![ion.rangeSlider](_tmp/logo-ion-range-slider.png)
 
-> English description | <a href="readme.ru.md">Описание на русском</a>
-
 Ion.RangeSlider. Is an easy, flexible and responsive range slider with tons of options.
 
 ***
 
-* Version: 2.1.7 | *Version 3.x is under development now*
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/en.html">Project page and demos</a>
-* <a href="http://ionden.com/a/plugins/ion.rangeSlider/ion.rangeSlider-2.1.7.zip">Download ZIP</a>
+* Version: 2.3.1 | *Version 3.x is under development now*
+* <a href="http://ionden.com/a/plugins/ion.rangeSlider/">Project page and demos</a>
+* <a href="https://github.com/IonDen/ion.rangeSlider/archive/2.3.1.zip">Download ZIP</a>
 
 ## Description
 * Ion.RangeSlider — cool, comfortable, responsive and easily customizable range slider
@@ -21,7 +19,7 @@ Ion.RangeSlider. Is an easy, flexible and responsive range slider with tons of o
 ![ion.rangeSlider](http://ionden.com/a/plugins/ion.rangeSlider/static/img/ion-range-slider.png)
 
 ## Key features
-* Skin support. (5 skins included and PSD for skin creation)
+* Skin support. (6 skins included)
 * Any number of sliders at one page without conflicts and big performance problems
 * Two slider types single (1 slider) and double (2 sliders)
 * Support of negative and fractional values
@@ -59,27 +57,47 @@ Add the following libraries to the page:
 * ion.rangeSlider.min.js
 
 Add the following stylesheets to the page:
-* <a href="http://necolas.github.io/normalize.css/" target="_blank">normalize.css</a> (optional)
-* ion.rangeSlider.css
-
-Plus, a skin for the slider. 5 skins are included. Choose one:
-* ion.rangeSlider.skinFlat.css + sprite-skin-flat.png
-* ion.rangeSlider.skinHTML5.css + no images
-* ion.rangeSlider.skinModern.css + sprite-skin-modern.png
-* ion.rangeSlider.skinNice.css + sprite-skin-nice.png
-* ion.rangeSlider.skinSimple.css + sprite-skin-simple.png
-
-Or use the included PSD file and design a custom skin.
+* ion.rangeSlider.min.css
 
 
-## Install with bower
 
-* bower install ionrangeslider
+## CDN
+
+Use [CDNjs](https://cdnjs.com/libraries/ion-rangeslider) or [JSdelivr](https://www.jsdelivr.com/package/npm/ion-rangeslider) to get latest version of plugin and jQuery.
+```html
+<!--Plugin CSS file with desired skin-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
+<!--jQuery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--Plugin JavaScript file-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>   
+``` 
 
 
-## Install with npm
+
+## Install with NPM
+
+Use [NPM](https://www.npmjs.com/package/ion-rangeslider) to download latest version of a plugin and install it directly in to your project. 
 
 * npm install ion-rangeslider
+
+
+
+## Install with Bower
+
+Use [Bower](https://bower.io/) to download latest version of a plugin and install it directly in to your project. 
+
+* bower install ion-rangeslider
+
+
+
+## Install with Yarn
+
+Use [Yarn](https://yarnpkg.com/en/package/ion-rangeslider) to download latest version of a plugin and install it directly in to your project. 
+
+* yarn add ion-rangeslider
 
 
 ## Initialisation
@@ -95,20 +113,26 @@ $("#example_id").ionRangeSlider();
 ```
 
 
-## Demo for juniors
+## <a href="https://jsfiddle.net/IonDen/uqs7njp9/" target="_blank">Experiments playground</a>
 
-If your are new in web development and you are not sure how to correctly install the plugin to your web-page, please download
-<a href="http://ionden.com/a/plugins/ion.rangeSlider/ionRangeSliderDemo.zip" class="button">this demo example</a>
-
-
-## Migrating from 1.x to 2.x
-* All params (except functions) are lowercase now: <b>param_name</b>, not paramName
-* Same param names was changed: hasGrid &rarr; <b>grid</b>, onLoad &rarr; <b>onStart</b>
-* Callbacks data object format was changed. Example: fromNumber &rarr; <b>from</b>
-* Slider now writes it's result to value attribute and also to data-from and data-to attributes
-
-
-## <a href="http://jsfiddle.net/IonDen/qv6yrjrv/" target="_blank">Experiments playground</a>
+Here you can find bunch of advanced JSFIDDLE demos with different, non-standard use cases:
+* [Custom marks on slider](https://jsfiddle.net/IonDen/tdvxs3zL/)
+* [1 handle bind to 1 input](https://jsfiddle.net/IonDen/khngpw3m/)
+* [2 handles bind to 2 inputs](https://jsfiddle.net/IonDen/avcm6wpj/)
+* [2 sliders connected to each other](https://jsfiddle.net/IonDen/1hnvxsg5/)
+* [2 dependant sliders](https://jsfiddle.net/IonDen/f1t6qpx0/)
+* [1st slider disables/enables 2nd slider](https://jsfiddle.net/IonDen/kqwm1294/)
+* [Non-linear slider](https://jsfiddle.net/IonDen/5f2730ds/)
+* [Plus and Minus buttons](https://jsfiddle.net/IonDen/e9as5k2m/)
+* [Calculating sum](https://jsfiddle.net/IonDen/dfcmryn2/)
+* [Adding one more diapazon on 1 slider](https://jsfiddle.net/IonDen/ckwrqv75/)
+* [Live editing of Min and Max values](https://jsfiddle.net/IonDen/wgfv76je/)
+* [Prettify and transform values at the same time](https://jsfiddle.net/IonDen/kc0tzreu/)
+* [Rendering money value n.nn](https://jsfiddle.net/IonDen/a0rghmd7/)
+* [Changing step live](https://jsfiddle.net/IonDen/5ptjgm6h/)
+* [Toggle slider](https://jsfiddle.net/IonDen/7m4otxwp/)
+* [Skip some values](https://jsfiddle.net/IonDen/bqyw1e7k/)
+* [Values array + prettify](https://jsfiddle.net/IonDen/p9gu71sL/)
 
 
 ## Settings
@@ -116,6 +140,7 @@ If your are new in web development and you are not sure how to correctly install
 
 | Option | Data-Attr | Defaults | Type | Description |
 | --- | --- | --- | --- | --- |
+| `skin` | `data-skin` | `flat` | string | Choose UI skin to use (flat, big, modern, round, sharp, square) |
 | `type` | `data-type` | `single` | string | Choose slider type, could be `single` - for one handle, or `double` for two handles |
 | `min` | `data-min` | `10` | number | Set slider minimum value |
 | `max` | `data-max` | `100` | number | Set slider maximum value |
@@ -124,7 +149,7 @@ If your are new in web development and you are not sure how to correctly install
 | `step` | `data-step` | `1` | number | Set sliders step. Always > 0. Could be fractional |
 | `min_interval` | `data-min-interval` | `-` | number | Set minimum diapason between sliders. Only for **double** type |
 | `max_interval` | `data-max-interval` | `-` | number | Set minimum maximum between sliders. Only for **double** type |
-| `max_drag_interval` | `data-drag-interval` | `false` | boolean | Allow user to drag whole range. Only for **double** type |
+| `drag_interval` | `data-drag-interval` | `false` | boolean | Allow user to drag whole range. Only for **double** type |
 | `values` | `data-values` | `[]` | array | Set up your own array of possible slider values. They could be numbers or strings. If the values array is set up, min, max and step param, can no longer be changed |
 | `from_fixed` | `data-from-fixed` | `false` | boolean | Fix position of left (or single) handle |
 | `from_min` | `data-from-min` | `min` | number | Set minimum limit for left (or single) handle |
@@ -138,9 +163,8 @@ If your are new in web development and you are not sure how to correctly install
 | `prettify_separator` | `data-prettify-separator` | ` ` | string | Set up your own separator for long numbers: 10000000 &rarr; 10,000,000 etc. |
 | `prettify` | `-` | `null` | function | Set up your own prettify function. Can be anything. For example, you can set up unix time as slider values and than transform them to cool looking dates |
 | `force_edges` | `data-force-edges` | `false` | boolean | Sliders handles and tooltips will be always inside it's container |
-| `keyboard` | `data-keyboard` | `false` | boolean | Activates keyboard controls. Move left: &larr;, &darr;, A, S. Move right: &rarr;, &uarr;, W, D. |
-| `keyboard_step` | `data-keyboard-step` | `5` | number | Movement step, than controlling from keyboard. In percents |
-| `grid` | `data-grid` | `false` | boolean | Enables grid of values above the slider |
+| `keyboard` | `data-keyboard` | `true` | boolean | Activates keyboard controls. Move left: &larr;, &darr;, A, S. Move right: &rarr;, &uarr;, W, D. |
+| `grid` | `data-grid` | `true` | boolean | Enables grid of values above the slider |
 | `grid_margin` | `data-grid-margin` | `true` | boolean | Set left and right grid gaps |
 | `grid_num` | `data-grid-num` | `4` | number | Number of grid units |
 | `grid_snap` | `data-grid-snap` | `false` | boolean | Snap grid to sliders step (step param). If activated, grid_num will not be used. Max steps = 50 |
@@ -152,11 +176,14 @@ If your are new in web development and you are not sure how to correctly install
 | `decorate_both` | `data-decorate-both` | `true` | boolean | Used for **double** type and only if prefix or postfix was set up. Determine how to decorate close values. For example: **$10k — $100k** or **$10 — 100k** |
 | `values_separator` | `data-decorate-both` | ` - ` | string | Set your own separator for close values. Used for **double** type. Default: **10 — 100**. Or you may set: **10 to 100, 10 + 100, 10 &rarr; 100** etc. |
 | `input_values_separator` | `data-input-values-separator` | ` ; ` | string | Separator for **double** values in input value property. `<input value="25;42">` |
-| `disable` | `data-disable` | `false` | boolean | Locks slider and makes it inactive |
+| `disable` | `data-disable` | `false` | boolean | Locks slider and makes it inactive. Input is disabled too. Invisible to forms |
+| `block` | `data-blokc` | `false` | boolean | Locks slider and makes it inactive. Input is NOT disabled. Can be send with forms |
+| `extra_classes` | `data-extra-classes` | `—` | string | Traverse extra CSS-classes to sliders container |
+| `scope` | `-` | `null` | object | Scope for callbacks. Pass any object |
 | `onStart` | `-` | `null` | function | Callback. Is called on slider start. Gets all slider data as a 1st attribute |
 | `onChange` | `-` | `null` | function | Callback. IS called on each values change. Gets all slider data as a 1st attribute |
-| `onFinish` | `-` | `null` | function | Callback. Is called than user releases handle. Gets all slider data as a 1st attribute |
-| `onUpdate` | `-` | `null` | function | Callback. Is called than slider is modified by external methods `update` or `reset` |
+| `onFinish` | `-` | `null` | function | Callback. Is called when user releases handle. Gets all slider data as a 1st attribute |
+| `onUpdate` | `-` | `null` | function | Callback. Is called when slider is modified by external methods `update` or `reset` |
 
 
 
@@ -164,16 +191,20 @@ If your are new in web development and you are not sure how to correctly install
 Result is object type and passed to callback as first argument:
 ```javascript
 Obj: {
-    "input": object,    // jQuery-link to input
-    "slider": object,   // jQuery-link to sliders container
-    "min": 0,           // MIN value
-    "max": 1000,        // MAX values
-    "from": 100,        // FROM value (left or single handle)
-    "from_percent": 10, // FROM value in percents
-    "from_value": 0,    // FROM index in values array (if used)
-    "to": 900,          // TO value (right handle in double type)
-    "to_percent": 90,   // TO value in percents
-    "to_value": 0       // TO index in values array (if used)
+    "input": object,            // jQuery-link to input
+    "slider": object,           // jQuery-link to sliders container
+    "min": 1000,                // MIN value
+    "max": 100000,              // MAX values
+    "from": 10000,              // FROM value
+    "from_percent": 10,         // FROM value in percents
+    "from_value": 0,            // FROM index in values array (if used)
+    "to": 90000,                // TO value
+    "to_percent": 90,           // TO value in percents
+    "to_value": 0,              // TO index in values array (if used)
+    "min_pretty": "1 000",      // MIN prettified (if used)
+    "max_pretty": "100 000",    // MAX prettified (if used)
+    "from_pretty": "10 000",    // FROM prettified (if used)
+    "to_pretty": "90 000"       // TO prettified (if used)
 }
 ```
 
@@ -181,6 +212,7 @@ Obj: {
 An example of a customised slider:
 ```javascript
 $("#example").ionRangeSlider({
+    skin: "big",
     min: 0,
     max: 10000,
     from: 1000,
@@ -256,8 +288,6 @@ All plugins options are covered in demos.
 
 #### Support Ion-series plugins development:
 
-* Donate through Pledgie service: [![](https://pledgie.com/campaigns/25694.png?skin_name=chrome)](https://pledgie.com/campaigns/25694)
+* [Support the plugin on Patreon](https://www.patreon.com/IonDen)
 
 * Donate direct to my Paypal account: https://www.paypal.me/IonDen
-
-* Donate direct to my Yandex.Money account: http://yasobe.ru/na/razrabotku

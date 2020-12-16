@@ -16,11 +16,6 @@ import java.util.List;
 public class IonRangeSliderOptions<J extends IonRangeSliderOptions<J>>
 		extends JavaScriptPart<J>
 {
-
-	/**
-	 * Field serialVersionUID
-	 */
-
 	/**
 	 * How long, in milliseconds, to wait to trigger the ionChange event after each change in the range value. Default 0.
 	 */

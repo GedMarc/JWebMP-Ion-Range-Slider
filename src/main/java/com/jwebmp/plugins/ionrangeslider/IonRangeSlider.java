@@ -82,7 +82,7 @@ public class IonRangeSlider
 	}
 
 	@Override
-	public IonRangeSliderOptions getOptions()
+	public IonRangeSliderOptions<?> getOptions()
 	{
 		return getFeature().getOptions();
 	}

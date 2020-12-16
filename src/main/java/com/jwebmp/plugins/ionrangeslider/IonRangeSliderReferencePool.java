@@ -31,14 +31,14 @@ import com.jwebmp.core.base.servlets.interfaces.ReferencePool;
 enum IonRangeSliderReferencePool
 		implements ReferencePool
 {
-	IonRangeSlider(new JavascriptReference("IonRangeSlider", 2.1, "bower_components/ionrangeslider/js/ion.rangeSlider.js"),
-	               new CSSReference("IonRangeSlider", 2.1, "bower_components/ionrangeslider/css/ion.rangeSlider.css")),
-	IonRangeSliderFlatSkin(null, new CSSReference("IonRangeSliderFlatSkin", 2.1, "bower_components/ionrangeslider/css/ion.rangeSlider.skinFlat.css")),
-	IonRangeSliderHtml5Skin(null, new CSSReference("IonRangeSliderHtml5Skin", 2.1, "bower_components/ionrangeslider/css/ion.rangeSlider.skinHTML5.css")),
-	IonRangeSliderModernSkin(null, new CSSReference("IonRangeSliderModernSkin", 2.1, "bower_components/ionrangeslider/css/ion.rangeSlider.skinModern.css")),
-	IonRangeSliderNiceSkin(null, new CSSReference("IonRangeSliderNiceSkin", 2.1, "bower_components/ionrangeslider/css/ion.rangeSlider.skinNice.css")),
-	IonRangeSliderSimpleSkin(null, new CSSReference("IonRangeSliderSimpleSkin", 2.1, "bower_components/ionrangeslider/css/ion.rangeSlider.skinSimple.css")),
-	IonRangeSliderSimpleDarkSkin(null, new CSSReference("IonRangeSliderSimpleDarkSkin", 2.1, "bower_components/ionrangeslider/css/ion.rangeSlider.skinDarkSimple.css")),
+	IonRangeSlider(new JavascriptReference("IonRangeSlider", 2.31, "bower_components/ionrangeslider/js/ion.rangeSlider.js"),
+	               new CSSReference("IonRangeSlider", 2.31, "bower_components/ionrangeslider/css/ion.rangeSlider.css")),
+	IonRangeSliderFlatSkin(null, new CSSReference("IonRangeSliderFlatSkin", 2.31, "bower_components/ionrangeslider/css/ion.rangeSlider.skinFlat.css")),
+	IonRangeSliderHtml5Skin(null, new CSSReference("IonRangeSliderHtml5Skin", 2.31, "bower_components/ionrangeslider/css/ion.rangeSlider.skinHTML5.css")),
+	IonRangeSliderModernSkin(null, new CSSReference("IonRangeSliderModernSkin", 2.31, "bower_components/ionrangeslider/css/ion.rangeSlider.skinModern.css")),
+	IonRangeSliderNiceSkin(null, new CSSReference("IonRangeSliderNiceSkin", 2.31, "bower_components/ionrangeslider/css/ion.rangeSlider.skinNice.css")),
+	IonRangeSliderSimpleSkin(null, new CSSReference("IonRangeSliderSimpleSkin", 2.31, "bower_components/ionrangeslider/css/ion.rangeSlider.skinSimple.css")),
+	IonRangeSliderSimpleDarkSkin(null, new CSSReference("IonRangeSliderSimpleDarkSkin", 2.31, "bower_components/ionrangeslider/css/ion.rangeSlider.skinDarkSimple.css")),
 	;
 	/**
 	 * Any sub data

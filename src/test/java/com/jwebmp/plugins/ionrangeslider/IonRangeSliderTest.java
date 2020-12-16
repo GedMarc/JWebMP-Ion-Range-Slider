@@ -18,6 +18,7 @@
 package com.jwebmp.plugins.ionrangeslider;
 
 import com.jwebmp.core.Page;
+import com.jwebmp.core.base.html.DivSimple;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -69,7 +70,7 @@ public class IonRangeSliderTest
 		p.getOptions()
 		 .setDynamicRender(false);
 		p.getBody()
-		 .add(irs);
+		 .add(new DivSimple<>().add(irs));
 		System.out.println(p.toString(true));
 	}
 }

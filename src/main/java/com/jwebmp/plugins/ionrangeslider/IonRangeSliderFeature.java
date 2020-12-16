@@ -30,10 +30,8 @@ import static com.jwebmp.core.utilities.StaticStrings.*;
  * @since 09 Jun 2017
  */
 public class IonRangeSliderFeature
-		extends Feature<IonRangeSliderFeature, IonRangeSliderOptions, IonRangeSliderFeature>
+		extends Feature<IonRangeSliderFeature, IonRangeSliderOptions<?>, IonRangeSliderFeature>
 {
-
-
 	/*
 	 * Constructs a new IonRangeSliderFeature
 	 */
@@ -41,26 +39,27 @@ public class IonRangeSliderFeature
 	{
 		super("IonRangeSliderFeature", component);
 	}
-
+	
 	@Override
 	protected void assignFunctionsToComponent()
 	{
-		addQuery(getComponent().getJQueryID() + "ionRangeSlider(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON + getNewLine());
+		addQuery(getComponent().asBase()
+		                       .getJQueryID() + "ionRangeSlider(" + getOptions() + STRING_CLOSING_BRACKET_SEMICOLON + getNewLine());
 	}
-
+	
 	/**
 	 * Returns the options
 	 *
 	 * @return
 	 */
 	@Override
-	public IonRangeSliderOptions getOptions()
+	public IonRangeSliderOptions<?> getOptions()
 	{
 		if (super.getOptions() == null)
 		{
-			setOptions(new IonRangeSliderOptions());
+			setOptions(new IonRangeSliderOptions<>());
 		}
 		return super.getOptions();
 	}
-
+	
 }

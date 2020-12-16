@@ -19,6 +19,7 @@ package com.jwebmp.plugins.ionrangeslider;
 
 import com.jwebmp.core.Page;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 
@@ -42,7 +43,13 @@ import jakarta.validation.constraints.NotNull;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "http://ionden.com/a/plugins/ion.rangeSlider/en.html",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/IonRangeSlider.jar/download")
+		pluginDownloadUrl = "https://mvnrepository.com/artifact/com.jwebmp.plugins.ion/jwebmp-ion-range-slider",
+		pluginGroupId = "com.jwebmp.plugins.ion",
+		pluginArtifactId = "jwebmp-ion-range-slider",
+		pluginModuleName = "com.jwebmp.plugins.ionrangeslider",
+		pluginStatus = PluginStatus.Released,
+		pluginLastUpdatedDate = "2020/12/15"
+)
 public class IonRangeSliderPageConfigurator
 		implements IPageConfigurator<IonRangeSliderPageConfigurator>
 {
