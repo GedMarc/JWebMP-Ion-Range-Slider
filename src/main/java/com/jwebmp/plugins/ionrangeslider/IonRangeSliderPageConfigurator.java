@@ -33,7 +33,7 @@ import jakarta.validation.constraints.NotNull;
  */
 @PluginInformation(pluginName = "Ion Range Slider",
 		pluginDescription = "Ion.RangeSlider. Is an easy, flexible and responsive range slider with tons of options.",
-		pluginUniqueName = "jwebswing-ion-range-slider",
+		pluginUniqueName = "ion-range-slider",
 		pluginVersion = "2.1.7",
 		pluginCategories = "selector,numbers,range,sliders, ui,web ui, framework",
 		pluginSubtitle = "Ion.RangeSlider. Is an easy, flexible and responsive range slider with tons of options.",
