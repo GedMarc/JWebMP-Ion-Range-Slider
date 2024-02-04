@@ -4,7 +4,7 @@ module com.jwebmp.plugins.ionrangeslider {
 	exports com.jwebmp.plugins.ionrangeslider;
 
 	requires com.jwebmp.core;
-	requires com.guicedee.logmaster;
+	
 
 	requires jakarta.validation;
 	requires java.logging;
